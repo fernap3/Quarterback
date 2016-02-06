@@ -1,0 +1,140 @@
+﻿body {
+    font-family: Roboto, sans-serif;
+	margin-top: 38px;
+}
+
+h1 {
+	margin-bottom: 1em;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: -78px;
+	font-size: 12pt;
+}
+
+table > tr:nth-child(2) {
+	font-weight: bold;
+}
+
+td:nth-child(1) {
+	font-weight: bold;
+	width: 1em;
+	border: none;
+	padding-left: .5em;
+    padding-right: .5em;
+}
+
+tr:first-child > td {
+	border: none;
+}
+
+tr:nth-child(2) td {
+	height: 1em;
+	border: none;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+tr:nth-child(2) > td:nth-child(2) {
+	width: 1em;
+}
+
+td {
+	border: 1px solid lightgray;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+}
+
+#ListContainer {
+	float: left;
+	margin-right: 2em;
+	width: 320px;
+}
+
+#TableContainer {
+	float: left;
+}
+
+.ListButton {
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 1em;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10pt;
+	padding-left: 16px;
+    padding-right: 16px;
+    height: 26px;
+	border: 1px solid lightgray;
+	background-color: white;
+	outline: none;
+}
+
+.ListButton:hover {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.ListButton:active {
+	background-color: #e6e6e6;
+}
+
+.ListButton:focus {
+	text-decoration: underline;
+}
+
+.ListButton:last-child {
+	margin-right: 0;
+}
+
+.EditableListDeleteButtonContainer {
+	display: block;
+}
+
+.EditableListDeleteButtonContainer > img {
+	cursor: pointer;
+	margin-top: 4px;
+	height: 16px;
+	width: 16px;
+}
+
+.NameInput {
+	margin-right: .5em;
+}
+
+.NumberInput {
+	width: 70px;
+}
+
+input {
+	border: 1px solid lightgray;
+	padding: 2px;
+}
+
+.RowTeamImage {
+	transform: rotate(-90deg);
+    height: 67px;
+    width: 511px;
+    transform-origin: 28% 200%;
+}
+
+.RowTeamImageContainer {
+	width: 67px;
+}
+
+@media (max-width:1310px) {
+	table {
+		font-size: 8pt;
+		margin-top: 0;
+	}
+	td {
+		height: 40px;
+		width: 40px;
+	}
+	#ListContainer {
+			margin-right: -2em;
+	}
+}
